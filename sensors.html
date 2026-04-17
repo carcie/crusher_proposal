@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensors & Edge Hardware | Decoupled Intelligence – Physical Sensing Layer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+<!-- ========== HEADER ========== -->
+<header class="py-fluid-3xl container-fluid reveal-header">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 9;">
+            <h1 class="font-heading text-step-5 tracking-tight">
+                Sensors & <span class="text-accent">Edge Hardware</span>.<br>
+                <span class="text-step-2 text-ink-muted">The physical foundation of decoupled intelligence.</span>
+            </h1>
+            <p class="mt-fluid-md text-step-1 text-ink-muted" style="max-width: 70ch;">
+                High‑fidelity sensing, ruggedised for mining environments, and standardised for seamless integration into our edge normalization layer, real‑time SCADA, and automated CMMS workflows.
+            </p>
+        </div>
+    </div>
+</header>
+
+<hr class="section-divider">
+
+<!-- ========== 01. INDUSTRIAL ETHERNET NODE (IE-NODE) ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 4;">
+            <h2 class="font-heading text-step-3">01. Industrial Ethernet Node</h2>
+            <p class="mt-fluid-sm text-ink-muted">Remote sensor interface for PLCs & automation systems.</p>
+        </div>
+        <div style="grid-column: span 7; grid-start: 6;">
+            <div class="service-item mb-fluid-lg">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Protocol Agnostic Gateway</h4>
+                <p class="text-step-0">Supports <strong>PROFINET, EtherNet/IP, and Modbus TCP/IP</strong> simultaneously – integrates with Siemens, Allen‑Bradley Rockwell, DeltaV, Modicon, and other PLCs. Available in two base versions: (1) 8 contact/NTC + 2 pulse/4‑20 mA inputs, or (2) 10 universal 4‑20 mA inputs. Expandable to 16 inputs via optional expansion boards (6 NTC, 6 analog, or 4‑port Ethernet switch).</p>
+            </div>
+            <div class="service-item">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Configuration & Cloud Integration</h4>
+                <p class="text-step-0">Free network configurator software provides a visual overview of all devices. Built‑in web server for remote settings adjustment. Native support for <strong>HazardMon.com</strong> secure cloud monitoring – live system status, graphs, and historical data accessible from any web‑enabled device.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02. OIL QUALITY SENSOR 2 (OQS 2) ========== -->
+<section class="py-fluid-2xl bg-canvas-alt reveal-section">
+    <div class="container-fluid">
+        <div class="grid-asymmetric">
+            <div style="grid-column: span 12;">
+                <h2 class="font-heading text-step-3 mb-fluid-lg">02. Oil Quality Sensor 2 (OQS 2)</h2>
+                <div class="border-accent-left">
+                    <p class="text-step-1">Real‑time lubricant health monitoring for gearboxes, engines, and hydraulic systems.</p>
+                </div>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Continuous Dielectric Analysis</h5>
+                <p class="text-step--1 mt-fluid-sm">Measures oxidation, water ingress (sensitivity <strong>0.01% / 100 ppm</strong>), fuel dilution, acid, carbon, particles, and viscosity shifts. Accuracy <strong>±0.5%</strong>. Outputs refreshed every <strong>2 seconds</strong>. Compatible with any mineral or synthetic oil.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Multiple Interfaces & Display Options</h5>
+                <p class="text-step--1 mt-fluid-sm">Digital outputs: <strong>RS485 (Modbus RTU), CANbus (CanOpen/J1939)</strong>. Analog output: <strong>4‑20 mA</strong>. Optionally pair with the <strong>Oil Quality Display (OQD)</strong> – an IP67 polycarbonate unit showing oil condition, temperature, calculated remaining life (days), and configurable traffic‑light alerts. OQD includes WiFi (JSON API) and logs 280k records.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Deployment Specifications</h5>
+                <p class="text-step--1 mt-fluid-sm">Stainless steel (AISI304), ½″ BSPP thread, 9‑30 V DC, 0.4 W. Fluid pressure up to <strong>1015 psi (70 bar)</strong>, operating temperature <strong>‑40 °C to +120 °C</strong>, IP68 when connected. CE, RoHS, shock/vibration tested per BS EN 60068.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Predictive Maintenance Integration</h5>
+                <p class="text-step--1 mt-fluid-sm">Oil condition data flows directly to the IE‑Node (4‑20 mA or Modbus) → edge normalization → SCADA → CMMS. When oil quality degrades below threshold, the CMMS automatically generates a work order for oil change or root‑cause inspection.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03. VIBRATION SENSORS (WIRED & WIRELESS) ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 5;">
+            <h2 class="font-heading text-step-3">03. Vibration Sensors</h2>
+            <p class="mt-fluid-sm text-ink-muted">Wired IO‑Link MEMS and wireless LoRaWAN options.</p>
+        </div>
+        <div style="grid-column: span 7;">
+            <div class="mt-fluid-lg">
+                <ul style="list-style: none;">
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Wired: IO‑Link 3‑Axis MEMS (ifm VVB306)</strong> – Frequency range <strong>2 Hz – 5.6 kHz</strong>, measurement ranges: v‑RMS 0‑300 mm/s, a‑Peak/a‑RMS 0‑16 g. Outputs velocity (RMS), acceleration (peak/RMS), temperature, and diagnostic data (bearing scout, unbalance events). Compliant with <strong>ISO 10816‑3, ISO 20816‑3</strong>. M12 connector, IP68, stainless steel housing.
+                    </li>
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Wireless: LoRaWAN (Advantech WISE‑2410)</strong> – On‑board ARM Cortex‑M4 computes <strong>v‑RMS, a‑RMS, a‑Peak, displacement, kurtosis, crest factor, skewness</strong> at the edge. Frequency range 10‑1000 Hz, ±16 g, 10‑bit resolution. Battery life <strong>2 years</strong> (1 hour update interval). IP66, ‑20 °C to +80 °C operating. Connects to LoRaWAN gateway → Modbus TCP/IP or MQTT to SCADA.
+                    </li>
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Integration into Decoupled Architecture</strong> – Wired sensors feed directly into IE‑Nodes (4‑20 mA, IO‑Link, or Modbus). Wireless sensors send processed eigenvalues to gateway, which publishes JSON payloads to the real‑time core (MongoDB). Threshold violations trigger automated work orders in the CMMS.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 04. COMPLEMENTARY SENSORS (BELT, BEARING, MISALIGNMENT) ========== -->
+<section class="py-fluid-2xl container-fluid bg-ink text-canvas reveal-section">
+    <h2 class="font-heading text-step-3 mb-fluid-xl">04. Complementary Sensors – Conveyor & Elevator Monitoring</h2>
+    <div class="grid-asymmetric">
+        <div class="process-step reveal-step" style="grid-column: span 4;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Belt Speed & Misalignment</h5>
+            <p class="text-step--1">Inductive proximity (P800) or 4‑20 mA (Milli‑Speed) sensors detect shaft rotation. Touchswitch provides force‑activated contact signal when belt drifts; rub blocks generate temperature alarms from friction.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 4;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Bearing & Surface Temperature</h5>
+            <p class="text-step--1">Adjustable depth ADB sensors mount via grease zerk threads. Lug sensors mount to housing to detect pulley misalignment or overheating motors/gearboxes.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 4;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Plug Indication & Level</h5>
+            <p class="text-step--1">Binswitch Elite – capacitance point level indicator with automatic build‑up compensation for bulk solids or liquids. Mounted at discharge spout to prevent blockage.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SENSOR INTEGRATION ARCHITECTURE DIAGRAM ========== -->
+<section class="py-fluid-3xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12;">
+            <h2 class="font-heading text-step-3 mb-fluid-xl">Sensor‑to‑CMMS Data Flow</h2>
+            <div class="border-accent-left mb-fluid-lg">
+                <p class="text-step-1">How physical measurements become maintenance actions.</p>
+            </div>
+        </div>
+        <div style="grid-column: span 12;">
+            <svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background: var(--color-canvas);">
+                <defs>
+                    <style>
+                        .flow-box { fill: var(--color-canvas-alt); stroke: var(--color-ink); stroke-width: 1.5; }
+                        .flow-line { stroke: var(--color-border-line); stroke-width: 1.5; fill: none; }
+                        .flow-accent { stroke: var(--color-accent); stroke-width: 2; fill: none; }
+                        .flow-text { font-family: var(--font-body); font-size: 11px; fill: var(--color-ink); }
+                        .flow-title { font-family: var(--font-heading); font-weight: 600; fill: var(--color-accent); }
+                    </style>
+                </defs>
+                
+                <!-- Sensors (left column) -->
+                <rect x="40" y="40" width="200" height="380" class="flow-box" rx="0" />
+                <text x="140" y="65" text-anchor="middle" class="flow-title">Physical Sensors</text>
+                <circle cx="70" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="85" y="105" class="flow-text">Vibration (wired/wireless)</text>
+                <circle cx="70" cy="140" r="4" fill="var(--color-accent)" />
+                <text x="85" y="145" class="flow-text">Oil Quality (OQS2)</text>
+                <circle cx="70" cy="180" r="4" fill="var(--color-accent)" />
+                <text x="85" y="185" class="flow-text">Belt speed / misalignment</text>
+                <circle cx="70" cy="220" r="4" fill="var(--color-accent)" />
+                <text x="85" y="225" class="flow-text">Bearing temperature (ADB)</text>
+                <circle cx="70" cy="260" r="4" fill="var(--color-accent)" />
+                <text x="85" y="265" class="flow-text">Surface temperature (lug)</text>
+                <circle cx="70" cy="300" r="4" fill="var(--color-accent)" />
+                <text x="85" y="305" class="flow-text">Plug / level (Binswitch)</text>
+                <circle cx="70" cy="340" r="4" fill="var(--color-accent)" />
+                <text x="85" y="345" class="flow-text">Current / power (4‑20mA)</text>
+                
+                <!-- Arrow to IE-Node -->
+                <line x1="240" y1="200" x2="320" y2="200" class="flow-line" />
+                <polygon points="320,195 335,200 320,205" fill="var(--color-accent)" />
+                <text x="280" y="190" class="flow-text">4‑20mA / IO‑Link / Modbus</text>
+                
+                <!-- IE-Node + Edge -->
+                <rect x="340" y="40" width="220" height="160" class="flow-box" rx="0" />
+                <text x="450" y="65" text-anchor="middle" class="flow-title">Edge Normalization</text>
+                <circle cx="370" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="385" y="105" class="flow-text">IE‑Node (PROFINET/EIP/Modbus)</text>
+                <circle cx="370" cy="130" r="4" fill="var(--color-accent)" />
+                <text x="385" y="135" class="flow-text">LoRaWAN Gateway (WISE-6610)</text>
+                <circle cx="370" cy="160" r="4" fill="var(--color-accent)" />
+                <text x="385" y="165" class="flow-text">OQD Display (WiFi/JSON)</text>
+                
+                <!-- Arrow to Real-time Core -->
+                <line x1="560" y1="120" x2="640" y2="120" class="flow-line" />
+                <polygon points="640,115 655,120 640,125" fill="var(--color-accent)" />
+                <text x="600" y="110" class="flow-text">MQTT / Modbus TCP / JSON</text>
+                
+                <!-- Real-time Core (MongoDB) -->
+                <rect x="660" y="40" width="200" height="160" class="flow-box" rx="0" />
+                <text x="760" y="65" text-anchor="middle" class="flow-title">Real‑time Core</text>
+                <circle cx="690" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="705" y="105" class="flow-text">MongoDB (live tags, config)</text>
+                <circle cx="690" cy="130" r="4" fill="var(--color-accent)" />
+                <text x="705" y="135" class="flow-text">Change Streams (async events)</text>
+                <circle cx="690" cy="160" r="4" fill="var(--color-accent)" />
+                <text x="705" y="165" class="flow-text">Threshold & alarm engine</text>
+                
+                <!-- Downward arrows to SCADA and CMMS -->
+                <line x1="760" y1="200" x2="760" y2="280" class="flow-line" />
+                <polygon points="755,280 760,295 765,280" fill="var(--color-accent)" />
+                <text x="770" y="250" class="flow-text">WebSocket / REST</text>
+                
+                <!-- SCADA box -->
+                <rect x="600" y="300" width="180" height="100" class="flow-box" rx="0" />
+                <text x="690" y="325" text-anchor="middle" class="flow-title">Web SCADA / HMI</text>
+                <text x="690" y="350" text-anchor="middle" class="flow-text">Real‑time dashboards</text>
+                <text x="690" y="370" text-anchor="middle" class="flow-text">Trends & synoptics</text>
+                
+                <!-- CMMS box -->
+                <rect x="840" y="300" width="180" height="100" class="flow-box" rx="0" />
+                <text x="930" y="325" text-anchor="middle" class="flow-title">CMMS Engine</text>
+                <text x="930" y="350" text-anchor="middle" class="flow-text">Automated work orders</text>
+                <text x="930" y="370" text-anchor="middle" class="flow-text">Inventory / procurement</text>
+                
+                <!-- Arrow from Core to CMMS -->
+                <line x1="860" y1="160" x2="930" y2="300" class="flow-accent" stroke-dasharray="4 2" />
+                <polygon points="925,295 935,305 940,295" fill="var(--color-accent)" />
+                <text x="945" y="230" class="flow-text" fill="var(--color-accent)">threshold breach → work order</text>
+                
+                <!-- Arrow between SCADA and CMMS -->
+                <line x1="780" y1="350" x2="835" y2="350" class="flow-accent" />
+                <polygon points="835,345 850,350 835,355" fill="var(--color-accent)" />
+                
+                <!-- Feedback loop to sensors -->
+                <path d="M 930 400 L 930 440 L 140 440 L 140 420" class="flow-accent" stroke-dasharray="6 4" fill="none" />
+                <text x="530" y="430" class="flow-text" fill="var(--color-accent)">maintenance action → sensor reset / recalibration</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="py-fluid-xl container-fluid reveal-footer" style="border-top: 1px solid var(--color-border-line);">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12; text-align: center;">
+            <p class="text-step--1">© 2026 Precision Mining Logistics — Physical Sensing Layer. Fully integrated with IE‑Node, OQS 2, LoRaWAN, and ISO 10816‑3 compliant vibration monitoring.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

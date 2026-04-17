@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | Decoupled Intelligence – Precision Mining Logistics</title>
+    
+    <!-- Design system CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- GSAP + Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    
+    <!-- Modular JS (ES modules – requires HTTP server) -->
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="py-fluid-3xl container-fluid reveal-header">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 9;">
+            <h1 class="font-heading text-step-5 tracking-tight">
+                Decoupled <span class="text-accent">Intelligence</span>.<br>
+                <span class="text-step-2 text-ink-muted">A reference architecture for deterministic uptime.</span>
+            </h1>
+            <p class="mt-fluid-md text-step-1 text-ink-muted" style="max-width: 70ch;">
+                Our architecture separates the physical sensing layer from the data management layer. 
+                This ensures that a sensor upgrade or a software change does not compromise your entire monitoring ecosystem.
+            </p>
+        </div>
+    </div>
+</header>
+
+<hr class="section-divider">
+
+<!-- ========== 01. HIGH-FIDELITY DATA ACQUISITION ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 4;">
+            <h2 class="font-heading text-step-3">01. High‑Fidelity Data Acquisition</h2>
+            <p class="mt-fluid-sm text-ink-muted">The Physical Layer: Heavy‑Duty Sensing in Harsh Environments</p>
+        </div>
+        <div style="grid-column: span 7; grid-start: 6;">
+            <div class="service-item mb-fluid-lg">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Cone Crusher: Kinematic Vibration & Thermal Analysis</h4>
+                <p class="text-step-0">We utilize <strong>3‑axis MEMS accelerometers</strong> (frequency range: 2 Hz to 5.6 kHz) to capture a comprehensive vibration profile. The system monitors <strong>v‑RMS</strong> (to track fatigue and structural resonance) and <strong>a‑Peak</strong> (to detect high‑energy impacts and bearing race degradation). All measurements are benchmarked against <strong>ISO 10816‑3</strong> standards, providing a 16 g measurement range with the resolution required to identify eccentric mass imbalances before they result in structural failure.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Conveyor Systems: Lubricant Molecular Health</h4>
+                <p class="text-step-0">Rather than relying on fixed‑interval oil changes, we employ <strong>electrochemical oil quality sensors</strong>. These sensors monitor the <strong>dielectric constant</strong> of the lubricant in real‑time, detecting oxidation and moisture ingress with a sensitivity of <strong>0.01% (100 ppm)</strong>. This allows condition‑based maintenance of gearboxes, significantly reducing the risk of bearing seizure and extending the life of high‑value lubricants.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02. SIGNAL NORMALIZATION AT THE EDGE ========== -->
+<section class="py-fluid-2xl bg-canvas-alt reveal-section">
+    <div class="container-fluid">
+        <div class="grid-asymmetric">
+            <div style="grid-column: span 12;">
+                <h2 class="font-heading text-step-3 mb-fluid-lg">02. Signal Normalization at the Edge</h2>
+                <div class="border-accent-left">
+                    <p class="text-step-1">Bridging the gap between field signals and digital logic.</p>
+                </div>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">The IO‑Link Standard (IEC 61131‑9)</h5>
+                <p class="text-step--1 mt-fluid-sm">By implementing <strong>IO‑Link</strong>, we transition away from legacy 4‑20 mA analog loops. This digital interface allows for <strong>dual‑channel processing</strong>: cyclical process data is used for real‑time monitoring, while acyclical diagnostic data provides the metadata required for deep‑dive root cause analysis. It also enables remote sensor parameterization, allowing field‑level adjustments without physical intervention.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Industrial Ethernet Nodes (IE‑Nodes)</h5>
+                <p class="text-step--1 mt-fluid-sm">Field signals are aggregated into ruggedized, multi‑protocol nodes. These devices support <strong>EtherNet/IP, PROFINET, and Modbus TCP/IP</strong> simultaneously. This allows the hardware to speak directly to existing PLC backbones for machine safety while concurrently streaming high‑resolution telemetry to our decoupled analysis stack.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03. PROTOCOL AGNOSTICISM & DATA SOVEREIGNTY ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 5;">
+            <h2 class="font-heading text-step-3">03. Protocol Agnosticism & Data Sovereignty</h2>
+            <p class="mt-fluid-sm text-ink-muted">The JSON Pipeline: Open Standards for Total Interoperability</p>
+        </div>
+        <div style="grid-column: span 7;">
+            <blockquote class="text-step-1 font-body" style="font-style: italic; border-left: 2px solid var(--color-accent); padding-left: var(--spacing-fluid-md);">
+                “We move beyond proprietary ‘black box’ gateways to a transparent, software‑defined network.”
+            </blockquote>
+            <div class="mt-fluid-lg">
+                <ul style="list-style: none;">
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Mapping to Structured JSON</strong> – Using high‑performance mapping engines (like <strong>JSON‑SCADA</strong>), we convert industrial register data into structured JSON payloads. This removes expensive proprietary driver licenses and ensures your machinery data is natively readable by web browsers, databases, and third‑party AI tools.
+                    </li>
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>MQTT & REST API Integration</strong> – Critical alarms and telemetry are distributed via a <strong>Pub/Sub MQTT architecture</strong>, designed for low‑latency delivery even in low‑bandwidth pit operations. Furthermore, the entire stack remains accessible via <strong>REST APIs</strong>, ensuring your data is never locked within a single vendor’s dashboard.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 04. THE ANALYSIS & MAINTENANCE LOOP ========== -->
+<section class="py-fluid-2xl container-fluid bg-ink text-canvas reveal-section">
+    <h2 class="font-heading text-step-3 mb-fluid-xl">04. The Analysis & Maintenance Loop</h2>
+    <div class="grid-asymmetric">
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Dynamic Web‑Native SCADA</h5>
+            <p class="text-step--1">The HMI layer is built on modern web standards, providing real‑time visualization of machine health on any authorized device. Because the system is built on a <strong>JSON‑driven engine</strong>, it handles thousands of data points with sub‑millisecond latency, offering granular “drill‑down” capabilities into the vibration spectra of every crusher bearing.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Automated Maintenance Management (CMMS)</h5>
+            <p class="text-step--1">The analysis engine is directly integrated with the <strong>CMMS maintenance logic</strong>. When a sensor detects a threshold violation (e.g., an abrupt increase in <strong>a‑Peak</strong> vibration levels), the system automatically generates a preventative work order. It attaches the relevant technical manuals, identifies the required spare parts in inventory, and alerts the maintenance team before the fault escalates into a breakdown.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== DETAILED DIAGRAM (asymmetric, line‑based, no shadows) ========== -->
+<section class="py-fluid-3xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12;">
+            <h2 class="font-heading text-step-3 mb-fluid-xl">Architecture Overview</h2>
+            <div class="border-accent-left mb-fluid-lg">
+                <p class="text-step-1">End‑to‑end data flow: from field sensors to actionable intelligence.</p>
+            </div>
+        </div>
+        <div style="grid-column: span 12;">
+            <!-- SVG Diagram – adheres to design system: line-based, asymmetric grouping, accent signaling -->
+            <svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background: var(--color-canvas);">
+                <defs>
+                    <style>
+                        .diagram-box { fill: var(--color-canvas-alt); stroke: var(--color-ink); stroke-width: 1.5; }
+                        .diagram-line { stroke: var(--color-border-line); stroke-width: 1.5; fill: none; }
+                        .accent-line { stroke: var(--color-accent); stroke-width: 2; stroke-dasharray: 4 2; }
+                        .diagram-text { font-family: var(--font-body); font-size: 13px; fill: var(--color-ink); }
+                        .diagram-title { font-family: var(--font-heading); font-weight: 600; fill: var(--color-accent); }
+                    </style>
+                </defs>
+                
+                <!-- Layer 1: Sensing Layer (left) -->
+                <rect x="40" y="40" width="220" height="160" class="diagram-box" rx="0" />
+                <text x="150" y="65" text-anchor="middle" class="diagram-title">Physical Sensing Layer</text>
+                <circle cx="70" cy="110" r="4" fill="var(--color-accent)" />
+                <text x="85" y="115" class="diagram-text">3‑axis MEMS accelerometers</text>
+                <circle cx="70" cy="140" r="4" fill="var(--color-accent)" />
+                <text x="85" y="145" class="diagram-text">Electrochemical oil sensors</text>
+                <circle cx="70" cy="170" r="4" fill="var(--color-accent)" />
+                <text x="85" y="175" class="diagram-text">ISO 10816‑3 vibration profiles</text>
+                
+                <!-- Arrow to Edge Normalization -->
+                <line x1="260" y1="120" x2="340" y2="120" class="diagram-line" marker-end="url(#arrowhead)" />
+                <polygon points="340,115 355,120 340,125" fill="var(--color-accent)" />
+                
+                <!-- Layer 2: Edge Normalization -->
+                <rect x="360" y="40" width="240" height="160" class="diagram-box" rx="0" />
+                <text x="480" y="65" text-anchor="middle" class="diagram-title">Edge Normalization</text>
+                <circle cx="390" cy="110" r="4" fill="var(--color-accent)" />
+                <text x="405" y="115" class="diagram-text">IO‑Link (IEC 61131‑9)</text>
+                <circle cx="390" cy="140" r="4" fill="var(--color-accent)" />
+                <text x="405" y="145" class="diagram-text">EtherNet/IP / PROFINET / Modbus</text>
+                <circle cx="390" cy="170" r="4" fill="var(--color-accent)" />
+                <text x="405" y="175" class="diagram-text">Dual‑channel process + diagnostic</text>
+                
+                <!-- Arrow to JSON Pipeline -->
+                <line x1="600" y1="120" x2="680" y2="120" class="diagram-line" />
+                <polygon points="680,115 695,120 680,125" fill="var(--color-accent)" />
+                
+                <!-- Layer 3: Protocol Agnosticism -->
+                <rect x="700" y="40" width="240" height="160" class="diagram-box" rx="0" />
+                <text x="820" y="65" text-anchor="middle" class="diagram-title">Data Sovereignty Layer</text>
+                <circle cx="730" cy="110" r="4" fill="var(--color-accent)" />
+                <text x="745" y="115" class="diagram-text">JSON‑SCADA mapping engine</text>
+                <circle cx="730" cy="140" r="4" fill="var(--color-accent)" />
+                <text x="745" y="145" class="diagram-text">MQTT Pub/Sub</text>
+                <circle cx="730" cy="170" r="4" fill="var(--color-accent)" />
+                <text x="745" y="175" class="diagram-text">REST APIs</text>
+                
+                <!-- Downward arrow to Analysis -->
+                <line x1="820" y1="200" x2="820" y2="280" class="diagram-line" />
+                <polygon points="815,280 820,295 825,280" fill="var(--color-accent)" />
+                
+                <!-- Layer 4: Analysis & Maintenance Loop (bottom) -->
+                <rect x="560" y="300" width="520" height="150" class="diagram-box" rx="0" />
+                <text x="820" y="330" text-anchor="middle" class="diagram-title">Analysis & Maintenance Loop</text>
+                
+                <!-- SCADA block -->
+                <rect x="590" y="350" width="200" height="70" fill="var(--color-canvas-alt)" stroke="var(--color-accent)" stroke-width="1.5" />
+                <text x="690" y="380" text-anchor="middle" class="diagram-text"><tspan font-weight="600">Web‑Native SCADA</tspan></text>
+                <text x="690" y="400" text-anchor="middle" class="diagram-text">JSON‑driven HMI</text>
+                <text x="690" y="415" text-anchor="middle" class="diagram-text">sub‑ms latency</text>
+                
+                <!-- Arrow between SCADA and CMMS -->
+                <line x1="790" y1="385" x2="850" y2="385" class="accent-line" />
+                <polygon points="850,380 865,385 850,390" fill="var(--color-accent)" />
+                
+                <!-- CMMS block -->
+                <rect x="870" y="350" width="190" height="70" fill="var(--color-canvas-alt)" stroke="var(--color-accent)" stroke-width="1.5" />
+                <text x="965" y="380" text-anchor="middle" class="diagram-text"><tspan font-weight="600">Automated CMMS</tspan></text>
+                <text x="965" y="400" text-anchor="middle" class="diagram-text">work order generation</text>
+                <text x="965" y="415" text-anchor="middle" class="diagram-text">inventory & alerts</text>
+                
+                <!-- Feedback loop line back to sensing (dashed) -->
+                <path d="M 590 385 L 50 385 L 50 200 L 150 200" class="accent-line" fill="none" stroke-dasharray="6 4" />
+                <text x="310" y="380" class="diagram-text" fill="var(--color-accent)" font-style="italic">closed‑loop maintenance</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="py-fluid-xl container-fluid reveal-footer" style="border-top: 1px solid var(--color-border-line);">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12; text-align: center;">
+            <p class="text-step--1">© 2026 Precision Mining Logistics — Decoupled Intelligence. Built on open standards.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

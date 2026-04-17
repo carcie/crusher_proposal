@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Core | Decoupled Intelligence – Real‑time SCADA Foundation</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="py-fluid-3xl container-fluid reveal-header">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 9;">
+            <h1 class="font-heading text-step-5 tracking-tight">
+                Real‑time <span class="text-accent">Visualization Core</span>.<br>
+                <span class="text-step-2 text-ink-muted">A portable, scalable SCADA/IoT foundation.</span>
+            </h1>
+            <p class="mt-fluid-md text-step-1 text-ink-muted" style="max-width: 70ch;">
+                Built on mainstream open‑source IT tools, this layer provides a vendor‑independent, horizontally scalable platform for monitoring, control, and data integration – from a single machine to global clusters.
+            </p>
+        </div>
+    </div>
+</header>
+
+<hr class="section-divider">
+
+<!-- ========== 01. REAL‑TIME CORE & PERSISTENCE ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 4;">
+            <h2 class="font-heading text-step-3">01. Real‑time Core & Persistence</h2>
+            <p class="mt-fluid-sm text-ink-muted">MongoDB as the unified data backbone.</p>
+        </div>
+        <div style="grid-column: span 7; grid-start: 6;">
+            <div class="service-item mb-fluid-lg">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Document‑Oriented Real‑time Database</h4>
+                <p class="text-step-0">The platform leverages <strong>MongoDB</strong> as the single source of truth – serving as real‑time core, persistent configuration store, and Sequence of Events (SOE) historian. The NoSQL, schema‑less data model allows unlimited tags, servers, and users without predefined schemas, enabling rapid adaptation to evolving field requirements.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-line"></div>
+                <h4 class="font-heading text-step-1 mt-fluid-sm">Change Streams & Asynchronous Events</h4>
+                <p class="text-step-0">Using <strong>MongoDB Change Streams</strong>, the system processes database events in real time. Every data insertion, update, or deletion triggers immediate, asynchronous reactions – from alarm generation to historian logging – without polling, ensuring sub‑second latency even under high throughput.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02. WEB‑NATIVE HMI & CONFIGURATION ========== -->
+<section class="py-fluid-2xl bg-canvas-alt reveal-section">
+    <div class="container-fluid">
+        <div class="grid-asymmetric">
+            <div style="grid-column: span 12;">
+                <h2 class="font-heading text-step-3 mb-fluid-lg">02. Web‑Native HMI & Configuration</h2>
+                <div class="border-accent-left">
+                    <p class="text-step-1">Zero‑client visualization, accessible from any device.</p>
+                </div>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">HTML5 Responsive Interface</h5>
+                <p class="text-step--1 mt-fluid-sm">The human‑machine interface is built entirely on <strong>HTML5, JavaScript, and SVG</strong>. It runs natively in any modern browser – desktop, tablet, or mobile – without plugins. Internationalization (UTF‑8/I18N) is standard, supporting multilingual deployments across global sites.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Inkscape‑Based Synoptic Editor</h5>
+                <p class="text-step--1 mt-fluid-sm">Dynamic process graphics are created using <strong>Inkscape</strong>, a professional open‑source vector graphics editor. Engineers design SVG synoptics with familiar drawing tools, then link them to live data points via custom attributes – no proprietary drawing software required.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Web‑Based Configuration Manager</h5>
+                <p class="text-step--1 mt-fluid-sm">All system parameters – tags, drivers, alarms, users – are configured through a <strong>secure web interface</strong>. Changes are applied live, without restarting services, enabling dynamic adaptation to process modifications.</p>
+            </div>
+            <div style="grid-column: span 6;" class="mt-fluid-lg">
+                <h5 class="font-heading text-step-0">Role‑Based Access Control (RBAC)</h5>
+                <p class="text-step--1 mt-fluid-sm">Fine‑grained permissions control who can view, edit, or acknowledge alarms. RBAC integrates with existing LDAP/Active Directory or operates as a standalone authentication system, ensuring operational security.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03. PROTOCOL GATEWAY & EDGE ARCHITECTURE ========== -->
+<section class="py-fluid-2xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 5;">
+            <h2 class="font-heading text-step-3">03. Protocol Gateway & Edge Architecture</h2>
+            <p class="mt-fluid-sm text-ink-muted">Unlimited connectivity, horizontally scalable.</p>
+        </div>
+        <div style="grid-column: span 7;">
+            <div class="mt-fluid-lg">
+                <ul style="list-style: none;">
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Extensive Driver Library</strong> – Native support for <strong>IEC 60870‑5‑104, DNP3, Modbus (TCP/RTU), MQTT, OPC UA, Siemens S7, BACnet, IEC 61850 MMS/GOOSE, and many more</strong>. New drivers can be added in any language (Node.js, C#, Golang) by simply reading from and writing to MongoDB collections.
+                    </li>
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Lightweight Redundant Data Acquisition Nodes</strong> – Distributed collectors (e.g., Raspberry Pi) connect securely over TLS to the central database. Each node can handle multiple protocols, and nodes can be clustered for redundancy and load sharing. Horizontal scaling is achieved through MongoDB sharding and container orchestration (Docker, Kubernetes).
+                    </li>
+                    <li class="py-fluid-sm" style="border-bottom: 1px solid var(--color-border-line);">
+                        <strong>Edge Processing & Data Concentration</strong> – Nodes can perform local calculations, alarm filtering, and data aggregation before sending to the core, reducing bandwidth usage in remote or low‑connectivity pit environments.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 04. HISTORIAN & ADVANCED ANALYTICS ========== -->
+<section class="py-fluid-2xl container-fluid bg-ink text-canvas reveal-section">
+    <h2 class="font-heading text-step-3 mb-fluid-xl">04. Historian & Advanced Analytics</h2>
+    <div class="grid-asymmetric">
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">PostgreSQL/TimescaleDB Historian</h5>
+            <p class="text-step--1">High‑resolution time‑series data is stored in <strong>PostgreSQL with the TimescaleDB extension</strong>, optimized for fast inserts and complex temporal queries. This historian automatically aggregates raw telemetry into configurable intervals (minute, hour, day) for long‑term trend analysis.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Native Grafana Integration</h5>
+            <p class="text-step--1">The historian connects directly to <strong>Grafana</strong>, enabling instant creation of dashboards, alerts, and ad‑hoc queries. Mechanical engineers can visualize vibration spectra, temperature trends, and oil quality degradation without writing SQL. Grafana’s alerting engine integrates with the event viewer for automated notification escalation.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Big Data & ML Extensibility</h5>
+            <p class="text-step--1">Through the <strong>MongoDB Spark connector</strong>, the platform feeds directly into big data pipelines and machine learning frameworks. Predictive models for bearing failure or conveyor misalignment can be trained on the full historian dataset and deployed back to the edge.</p>
+        </div>
+        <div class="process-step reveal-step" style="grid-column: span 6;">
+            <div class="process-step-dot"></div>
+            <h5 class="font-heading text-step-1">Third‑Party Tool Integration</h5>
+            <p class="text-step--1">Standard connectors to <strong>Power BI, Metabase, Node‑RED, Alerta, and Kafka</strong> are available. The platform can also serve as a data concentrator for ERP/MES systems, bridging real‑time operations with enterprise planning.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== ARCHITECTURE DIAGRAM ========== -->
+<section class="py-fluid-3xl container-fluid reveal-section">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12;">
+            <h2 class="font-heading text-step-3 mb-fluid-xl">System Architecture Overview</h2>
+            <div class="border-accent-left mb-fluid-lg">
+                <p class="text-step-1">From edge devices to real‑time dashboards and long‑term analytics.</p>
+            </div>
+        </div>
+        <div style="grid-column: span 12;">
+            <!-- SVG Diagram – adheres to design system: line-based, asymmetric, accent signaling -->
+            <svg viewBox="0 0 1200 550" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background: var(--color-canvas);">
+                <defs>
+                    <style>
+                        .arch-box { fill: var(--color-canvas-alt); stroke: var(--color-ink); stroke-width: 1.5; }
+                        .arch-line { stroke: var(--color-border-line); stroke-width: 1.5; fill: none; }
+                        .accent-arrow { stroke: var(--color-accent); stroke-width: 2; fill: none; }
+                        .arch-text { font-family: var(--font-body); font-size: 12px; fill: var(--color-ink); }
+                        .arch-title { font-family: var(--font-heading); font-weight: 600; fill: var(--color-accent); }
+                    </style>
+                </defs>
+                
+                <!-- Layer 1: Data Acquisition Nodes (left) -->
+                <rect x="40" y="40" width="200" height="160" class="arch-box" rx="0" />
+                <text x="140" y="65" text-anchor="middle" class="arch-title">Data Acquisition Layer</text>
+                <circle cx="70" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="85" y="105" class="arch-text">Redundant TLS nodes</text>
+                <circle cx="70" cy="130" r="4" fill="var(--color-accent)" />
+                <text x="85" y="135" class="arch-text">IEC 104 / DNP3 / Modbus</text>
+                <circle cx="70" cy="160" r="4" fill="var(--color-accent)" />
+                <text x="85" y="165" class="arch-text">MQTT / OPC UA / S7</text>
+                <circle cx="70" cy="190" r="4" fill="var(--color-accent)" />
+                <text x="85" y="195" class="arch-text">Edge calculations</text>
+                
+                <!-- Arrow to Core -->
+                <line x1="240" y1="120" x2="320" y2="120" class="arch-line" />
+                <polygon points="320,115 335,120 320,125" fill="var(--color-accent)" />
+                <text x="280" y="110" class="arch-text" font-size="10">Change Streams</text>
+                
+                <!-- Layer 2: MongoDB Core -->
+                <rect x="340" y="40" width="220" height="160" class="arch-box" rx="0" />
+                <text x="450" y="65" text-anchor="middle" class="arch-title">Real‑time Core (MongoDB)</text>
+                <circle cx="370" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="385" y="105" class="arch-text">Live tag database</text>
+                <circle cx="370" cy="130" r="4" fill="var(--color-accent)" />
+                <text x="385" y="135" class="arch-text">Configuration store</text>
+                <circle cx="370" cy="160" r="4" fill="var(--color-accent)" />
+                <text x="385" y="165" class="arch-text">SOE historian</text>
+                <circle cx="370" cy="190" r="4" fill="var(--color-accent)" />
+                <text x="385" y="195" class="arch-text">Change Streams engine</text>
+                
+                <!-- Arrows from Core to HMI and Historian -->
+                <line x1="450" y1="200" x2="450" y2="280" class="arch-line" />
+                <polygon points="445,280 450,295 455,280" fill="var(--color-accent)" />
+                
+                <line x1="560" y1="120" x2="640" y2="120" class="arch-line" />
+                <polygon points="640,115 655,120 640,125" fill="var(--color-accent)" />
+                <text x="600" y="110" class="arch-text" font-size="10">JSON over WebSocket</text>
+                
+                <!-- Layer 3: Web HMI (right) -->
+                <rect x="660" y="40" width="200" height="160" class="arch-box" rx="0" />
+                <text x="760" y="65" text-anchor="middle" class="arch-title">Web HMI Layer</text>
+                <circle cx="690" cy="100" r="4" fill="var(--color-accent)" />
+                <text x="705" y="105" class="arch-text">HTML5 / SVG interface</text>
+                <circle cx="690" cy="130" r="4" fill="var(--color-accent)" />
+                <text x="705" y="135" class="arch-text">Inkscape synoptics</text>
+                <circle cx="690" cy="160" r="4" fill="var(--color-accent)" />
+                <text x="705" y="165" class="arch-text">RBAC / web config</text>
+                <circle cx="690" cy="190" r="4" fill="var(--color-accent)" />
+                <text x="705" y="195" class="arch-text">Real‑time dashboards</text>
+                
+                <!-- Historian layer (bottom) -->
+                <rect x="340" y="300" width="520" height="140" class="arch-box" rx="0" />
+                <text x="600" y="330" text-anchor="middle" class="arch-title">Historian & Analytics Layer</text>
+                
+                <!-- TimescaleDB block -->
+                <rect x="370" y="350" width="200" height="60" fill="var(--color-canvas-alt)" stroke="var(--color-accent)" stroke-width="1.5" />
+                <text x="470" y="375" text-anchor="middle" class="arch-text"><tspan font-weight="600">PostgreSQL / TimescaleDB</tspan></text>
+                <text x="470" y="395" text-anchor="middle" class="arch-text">High‑resolution time‑series</text>
+                
+                <!-- Grafana block -->
+                <rect x="630" y="350" width="200" height="60" fill="var(--color-canvas-alt)" stroke="var(--color-accent)" stroke-width="1.5" />
+                <text x="730" y="375" text-anchor="middle" class="arch-text"><tspan font-weight="600">Grafana Dashboards</tspan></text>
+                <text x="730" y="395" text-anchor="middle" class="arch-text">Alerting & analytics</text>
+                
+                <!-- Arrow between TimescaleDB and Grafana -->
+                <line x1="570" y1="380" x2="625" y2="380" class="accent-arrow" stroke-dasharray="4 2" />
+                <polygon points="625,375 640,380 625,385" fill="var(--color-accent)" />
+                
+                <!-- External integrations arrow from Historian -->
+                <line x1="860" y1="370" x2="920" y2="370" class="arch-line" />
+                <polygon points="920,365 935,370 920,375" fill="var(--color-accent)" />
+                <text x="900" y="360" class="arch-text" font-size="10">Spark / Kafka / PowerBI</text>
+                
+                <!-- Feedback loop from HMI to core -->
+                <path d="M 860 120 L 940 120 L 940 240 L 600 240 L 600 200" class="accent-arrow" stroke-dasharray="6 4" fill="none" />
+                <text x="940" y="180" class="arch-text" fill="var(--color-accent)" font-style="italic" transform="rotate(-90,940,180)">control commands</text>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="py-fluid-xl container-fluid reveal-footer" style="border-top: 1px solid var(--color-border-line);">
+    <div class="grid-asymmetric">
+        <div style="grid-column: span 12; text-align: center;">
+            <p class="text-step--1">© 2026 Precision Mining Logistics — Real‑time Visualization Core. Built on open standards.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
