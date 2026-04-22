@@ -7,6 +7,7 @@ import { initProcessSteps } from './modules/processSteps.js';
 import { initImageReveal } from './modules/imageReveal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+		
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
         console.warn('GSAP or ScrollTrigger not loaded');
         return;
